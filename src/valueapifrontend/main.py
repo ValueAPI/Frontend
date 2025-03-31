@@ -2,6 +2,7 @@ from streamlit.web import cli as st_cli
 
 import click
 from os import path
+import pathlib
 
 
 @click.command()
@@ -21,4 +22,8 @@ from os import path
 def cli(server, context, port):
     # TODO: how to run with a selected port or server ip?
     # TODO: add additional streamlit paramteters
-    st_cli.main_run([path.join("src", "valueapifrontend", "app.py"), server, context])
+    st_cli.main_run([
+        path.join(pathlib.Path(__file__).parent.resolve(), "app.py"),
+        server,
+        context,
+    ])

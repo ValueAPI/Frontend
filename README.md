@@ -13,12 +13,7 @@ See [Deployment](https://github.com/ValueAPI/Deployment).
 
 ## Start the frontend app
 
-### With the cli
 ```
 valueapifrontend
 ```
 
-### Directly with streamlit
-```
-streamlit run src/valueapifrontend/app.py <value-api-url> <context>
-```
