@@ -14,5 +14,9 @@ RUN uv sync --frozen --no-cache
 ENV PATH="/app/venv/bin:$PATH"
 ENV VALUE_API_SERVER="http://server"
 ENV CONTEXT="default"
+# TODO: INTEGRATE THIS
+ENV PORT=80 
+# TODO: INTEGRATE THIS
+ENV HOST=0.0.0.0
 # Run the application.
 CMD uv run valueapifrontend --server $VALUE_API_SERVER --context $CONTEXT

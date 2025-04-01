@@ -17,3 +17,7 @@ See [Deployment](https://github.com/ValueAPI/Deployment).
 valueapifrontend
 ```
 
+### Build and run with Docker
+```
+docker compose up -d
+```
